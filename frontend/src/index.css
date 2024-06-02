@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .primary-btn {
+    @apply inline-block rounded-md bg-primary 
+      hover:bg-primary/70 border duration-200 py-2 px-6 
+      text-white cursor-pointer;
+  }
+  .outline-btn {
+    @apply inline-block rounded-md text-primary 
+      border-2 border-primary  hover:bg-primary/70
+      duration-200 py-2 px-6 hover:text-black  
+      cursor-pointer;
+  }
+  .picked-btn {
+    @apply w-1/2 bg-black text-white px-4 py-2;
+  }
+
+  .iconcss {
+    @apply cursor-pointer p-1.5 rounded-full hover:bg-primary transition-all
+        border border-black;
+  }
+
+  .userTable {
+    /* @apply bg-white; */
+    @apply min-w-full bg-white shadow-md rounded-lg overflow-hidden;
+  }
+  .userTable th {
+    /* @apply border text-base font-medium; */
+    @apply py-3 px-6 text-center bg-black text-white border border-white
+  }
+
+  .userTable td {
+    /* @apply border text-base text-center min-w-36 max-w-96; */
+    @apply py-4 px-6 border border-black
+  }
+
+  .Specifications-table{
+    @apply min-w-full
+  }
+
+  .Specifications-table th{
+    @apply text-start border border-black/50 px-4 py-1.5 w-1/3
+  }
+
+  .Specifications-table td{
+    @apply border border-black/50 px-4 py-1.5
+  }
+}
